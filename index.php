@@ -13,6 +13,17 @@
             $this->name = $name;
             $this->year = $year;
             $this->genere = $genere;
+        };
+
+        // => all'interno della classe è definito almeno un metodo
+        public function setNewest($year){
+            if($year >= 2023){
+                $this->visibility = true;
+            }
+        }
+
+        public function setNewest(){
+            return $this->visibility;
         }
     },
     
